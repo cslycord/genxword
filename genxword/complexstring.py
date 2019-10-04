@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with genxword.  If not, see <http://www.gnu.org/licenses/gpl.html>.
 
-from builtins import super
+from builtins import super, unicode_literals
 
 class ComplexString(str):
     """Handle accents and superscript / subscript characters."""
