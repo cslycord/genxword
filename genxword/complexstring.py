@@ -17,6 +17,8 @@
 # You should have received a copy of the GNU General Public License
 # along with genxword.  If not, see <http://www.gnu.org/licenses/gpl.html>.
 
+from builtins import super
+
 class ComplexString(str):
     """Handle accents and superscript / subscript characters."""
     accents = [768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781,
