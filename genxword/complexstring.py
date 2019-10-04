@@ -17,6 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with genxword.  If not, see <http://www.gnu.org/licenses/gpl.html>.
 
+from __future__ import unicode_literals
 from builtins import super
 
 class ComplexString(str):
