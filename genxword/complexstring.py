@@ -17,7 +17,6 @@
 # You should have received a copy of the GNU General Public License
 # along with genxword.  If not, see <http://www.gnu.org/licenses/gpl.html>.
 
-from __future__ import unicode_literals
 from builtins import super
 
 class ComplexString(str):
@@ -58,8 +57,8 @@ class ComplexString(str):
         This guarantees that the character is correctly displayed when
         iterating through the string, and that the length is correct.
         """
-        chars = {chr(n) for n in ComplexString.accents}
-        special = {chr(n) for n in ComplexString.special_chars}
+        chars = {unichr(n) for n in ComplexString.accents}
+        special = {unichr(n) for n in ComplexString.special_chars}
         formatted = []
         for letter in word:
             if letter in chars:
